@@ -13,12 +13,46 @@
     <link href="https://cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <main>
-      <h1 class="h1">
-        404<span class="blink">|</span>
-      </h1>
-      <a href="/">&leftarrow;</a>
-    </main>
+    <div class="quote">
+  <div class="image">
+    <img src="https://placeimg.com/500/500/arch/sepia" alt="">
+  </div>
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="text">
+      <p>Love all, trust a few, do wrong to none.</p>
+      <small>⚊ William Shakespeare</small>
+    </div>
+  </div>
+</div>
+
+<div class="generator">
+  <div class="generator-inner">
+    
+    <h3>Generator</h3>
+
+    <div class="form-group">
+      <label for="quote">Quote</label>
+      <textarea type="text" class="form-control" name="quote" required>Love all, trust a few, do wrong to none.</textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" name="author" value="William Shakespeare" required>
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image</label>
+      <input type="file" class="form-control" name="image" accept="image/x-png,image/gif,image/jpeg">
+    </div>
+
+    <div class="form-group">
+      <a href="javascript:getCapture();" class="btn btn-block btn-secondary">DOWNLOAD</a>
+      <a href="javascript:" id="download" style="display: none"></a>
+    </div>
+    
+  </div>     
+</div>
   <script sr="app.js"></script>
   <script sr="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
   <script sr="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"></script>
